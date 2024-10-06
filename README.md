@@ -1,13 +1,17 @@
 # todobackend
 WSO2 APK Code Challenge ToDo Service 
 
+## Docker Image
+
+docker pull sampathrajapakse/todo-service:latest
+
 ## Docker Image Creation
+
+Use the above provided docker image or you can build using following commands.
 
 docker buildx create --use
 
-
 docker buildx inspect --bootstrap
-
 
 docker buildx build --platform linux/amd64,linux/arm64 -t sampathrajapakse/todo-service:latest --push .
 
